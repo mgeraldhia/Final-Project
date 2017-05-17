@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.beginner.asahotak.ExitActivity">
+
+
+    <TextView
+        android:id="@+id/mTextNama2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Anda sudah menyelesaikan kuis singkat dari contoh pembuatan kuis berbasis Android, maap bila masih ada kekurangan. \n Klik Exit Untuk keluar."
+        android:layout_centerInParent="true"
+        android:textColor="#000"
+        android:textSize="24dp"
+        />
+
+    <Button
+        android:id="@+id/exit"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:text="EXIT"
+        android:textSize="25dp"
+        android:textColor="#faf8f8"
+        android:background="#1717b1"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+</RelativeLayout>

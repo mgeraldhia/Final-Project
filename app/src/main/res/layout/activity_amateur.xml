@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.beginner.asahotak.AmateurActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/aSoal1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="1. Ibu Kota Provinsi Jawa Barat?"
+                android:layout_marginTop="10dp"
+                style="@style/soal"/>
+
+            <RadioGroup
+                android:id="@+id/mRadioGroup1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/aSoal1"
+                android:layout_alignParentLeft="true">
+
+                <RadioButton
+                    android:id="@+id/bandung"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="onRadioButton"
+                    android:text="Bandung"
+                    android:layout_marginTop="3dp"
+                    android:textSize="20dp"/>
+                <RadioButton
+                    android:id="@+id/depok"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Depok"
+                    android:layout_marginTop="3dp"
+                    android:textSize="20dp"
+                    android:onClick="onRadioButton"/>
+                <RadioButton
+                    android:id="@+id/cianjur"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Cianjur"
+                    android:layout_marginTop="3dp"
+                    android:textSize="20dp"
+                    android:onClick="onRadioButton"/>
+            </RadioGroup>
+
+            <TextView
+                android:id="@+id/aSoal2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/mRadioGroup1"
+                android:text="2. Berapa jumlah provinsi Indonesia saat ini?"
+                style="@style/soal"/>
+
+            <RadioGroup
+                android:id="@+id/mRadioGroup2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/aSoal2"
+                android:layout_marginTop="3dp"
+                android:layout_alignParentLeft="true">
+
+                <RadioButton
+                    android:id="@+id/r34"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="34"
+                    android:onClick="onRadioButton"
+                    android:layout_marginTop="3dp"
+                    android:textSize="20dp"/>
+                <RadioButton
+                    android:id="@+id/r33"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="33"
+                    android:layout_marginTop="3dp"
+                    android:textSize="20dp"
+                    android:onClick="onRadioButton"/>
+                <RadioButton
+                    android:id="@+id/r32"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="32"
+                    android:layout_marginTop="3dp"
+                    android:textSize="20dp"
+                    android:onClick="onRadioButton"/>
+            </RadioGroup>
+
+            <TextView
+                android:id="@+id/aSoal3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="3. Amerika biasa disebut dengan .."
+                android:layout_below="@+id/mRadioGroup2"
+                style="@style/soal"/>
+            <RadioGroup
+                android:id="@+id/mRadioGroup3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:layout_below="@+id/aSoal3">
+                <RadioButton
+                    android:id="@+id/bibisam"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Bibi Sam"
+                    android:layout_marginTop="3dp"
+                    android:textSize="20dp"
+                    android:onClick="onRadioButton"/>
+                <RadioButton
+                    android:id="@+id/pamansam"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Paman Sam"
+                    android:layout_marginTop="3dp"
+                    android:textSize="20dp"
+                    android:onClick="onRadioButton"/>
+                <RadioButton
+                    android:id="@+id/nyonyasam"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Nyonya Sam"
+                    android:layout_marginTop="3dp"
+                    android:textSize="20dp"
+                    android:onClick="onRadioButton"/>
+            </RadioGroup>
+
+            <TextView
+                android:id="@+id/aSoal4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/mRadioGroup3"
+                android:text="4. Anyer terletak di provinsi?"
+                style="@style/soal"/>
+            <RadioGroup
+                android:id="@+id/mRadioGroup4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/aSoal4">
+                <RadioButton
+                    android:id="@+id/jakarta"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Jakarta"
+                    android:layout_marginTop="3dp"
+                    android:textSize="20dp"
+                    android:onClick="onRadioButton"/>
+                <RadioButton
+                    android:id="@+id/sumaterautara"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Sumatera Utara"
+                    android:layout_marginTop="3dp"
+                    android:textSize="20dp"
+                    android:onClick="onRadioButton"/>
+                <RadioButton
+                    android:id="@+id/banten"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Banten"
+                    android:layout_marginTop="3dp"
+                    android:textSize="20dp"
+                    android:onClick="onRadioButton"/>
+            </RadioGroup>
+
+            <Button
+                android:id="@+id/finish"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/mRadioGroup4"
+                android:text="FINISH"
+                style="@style/soal"
+                android:background="#2fa6a2" />
+        </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>

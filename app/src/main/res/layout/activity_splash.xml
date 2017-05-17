@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.beginner.asahotak.SplashActivity">
+
+    <ImageView
+        android:id="@+id/otak"
+        android:layout_width="match_parent"
+        android:layout_height="500dp"
+        android:src="@drawable/otak"
+        android:scaleType="fitXY"
+        android:layout_marginBottom="20dp"
+        android:layout_above="@+id/asah"
+        />
+
+    <TextView
+        android:id="@+id/asah"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:text="Asah Otakmu Disini"
+        android:layout_alignParentBottom="true"
+        android:textSize="35dp"
+        android:gravity="center"
+        android:background="#0503a9"
+        android:textColor="#fff9f9"
+        android:textStyle="bold" />
+
+</RelativeLayout>
